@@ -34,7 +34,7 @@ def div(a, b):
     return b / a # raise ZeroDivisionError if a == 0
 
 def log(a, b):
-    if a < 0:
+    if a <= 0:
         raise ValueError("Input cannot be a negative number.")
     return math.log(a,b)
 
