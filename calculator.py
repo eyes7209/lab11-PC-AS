@@ -11,6 +11,10 @@ One function per operation, in order.
 
 # First exam
 import math
+def square_root(a):
+    if a < 0: raise ValueError
+    else: return math.sqrt(a)
+def hypotenuse(a,b): return math.hypot(a,b)
 def add(a, b):
     return a+b
     pass
