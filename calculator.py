@@ -1,3 +1,7 @@
+# https://github.com/eyes7209/lab11-PC-AS/settings/access?guidance_task=
+# Partner 1: Patrick Carey
+# Patrner 2: Austin Stephenson
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -6,7 +10,10 @@ One function per operation, in order.
 """
 import math
 
-
+def square_root(a):
+    if a < 0: raise ValueError
+    else: return math.sqrt(a)
+def hypotenuse(a,b): return math.hypot(a,b)
 # First example
 def add(a, b): return a + b
 def sub(a,b): return a - b
