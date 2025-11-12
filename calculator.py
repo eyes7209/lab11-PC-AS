@@ -15,10 +15,7 @@ def div(a,b):
     if a == 0: raise ZeroDivisionError
     else: return b / a
 def log(a,b):
-    try: n = math.log(b,a)
-    except ValueError:
-        raise ValueError
-    else:
-        return n
+    if a < 0 or b < 0: raise ValueError
+    else: return math.log(b,a)
 def exp(a,b): return a ** b
 
